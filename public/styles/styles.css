@@ -1,3 +1,18 @@
+
+h1 {
+  size: 55px;
+  color: black;
+}
+
+.lead {
+  color: red;
+}
+
+.col {
+  background-color: teal;
+}
+
+
 .list-group-item {
   line-height: 2.5;
 }
