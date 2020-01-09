@@ -9,10 +9,61 @@ h1 {
 }
 
 .col {
-  background-color: teal;
+  background-color: cornflowerblue;
 }
 
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 960px;
+  background-color: coral;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .list-group-item {
   line-height: 2.5;
+}
+
+
+/*--- Slider ----*/
+
+.carousel-item{
+  height: 100vh;
+}
+
+.carousel-caption{
+position: absolute;
+top: 38%;
+text-transform: uppercase;
+width: 100%;
+right: 0;
+left: 0;
+}
+
+.carousel-caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+
+}
+
+
+.carousel-caption h3{
+font-size: 2rem;
+text-shadow: .1rem .1rem .5rem black;
+padding-bottom: 1.6rem;
+
+}
+
+.btn-lg {
+  border-width: medium; 
+  border-radius: 0;
+  font-size: 1.1rem;
+  background-color: orangered;
+
 }
