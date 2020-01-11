@@ -1,12 +1,18 @@
 
 h1 {
   size: 55px;
-  color: black;
+  color: rgb(247, 242, 242);
   font-family: 'Roboto Slab', serif;
 }
 
 .lead {
   color: red;
+}
+
+p {
+  width: 750px;
+  text-align: center;
+  float: center;
 }
 
 .col {
