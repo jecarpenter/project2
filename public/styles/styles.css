@@ -86,3 +86,53 @@ padding-bottom: 1.6rem;
   justify-content: center;
   align-items: center;
 }
+
+/*--- Profile Page ---*/
+
+.profile-card {
+  width : 400px;
+  margin: auto;
+  margin-top: 50px;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+
+}
+
+.body2 {
+  font-family: 'Roboto Slab', serif;
+  color:#3c3939;
+  background-color: #f1f1f1;
+}
+
+.image-container {
+position: relative;
+}
+
+.info {
+  color: #4b4fe2; 
+  margin-right: 16px;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.skill-bar {
+  background-color:#bdc9ea;
+  border-radius: 16px;
+}
+
+.progress-bar {
+  padding: 0.1em 16px;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #4b4fe2;
+}
+
+.title {
+
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+}
