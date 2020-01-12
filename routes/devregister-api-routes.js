@@ -2,15 +2,15 @@ var db = require("../models");
 
 module.exports = function (app) {
   // Find all Authors and return them to the user with res.json
-  app.get("/api/devregister", function (req, res) {
-    db.profiles.findAll({}).then(function (dbProfiles) {
+  app.get("/api/devregisters", function (req, res) {
+    db.Profiles.findAll({}).then(function (dbProfiles) {
       res.json(dbProfiles);
     });
   });
 
-  app.get("/api/devregister/:id", function (req, res) {
+  app.get("/api/devregisters/:id", function (req, res) {
 
-    db.profiles.findOne({
+    db.Profiles.findOne({
       where: {
         id: req.params.id
       }
@@ -19,17 +19,17 @@ module.exports = function (app) {
     });
   });
 
-  app.post("/api/devregister", function (req, res) {
-    // Create an Author with the data available to us in req.body
+  app.post("/api/devregisters", function (req, res) {
+    // Create a profile with the data available to us in req.body
     console.log(req.body);
-    db.profiles.create(req.body).then(function (dbProfiles) {
+    db.Profiles.create(req.body).then(function (dbProfiles) {
       res.json(dbProfiles);
     });
   });
 
   app.delete("/api/devregisters/:id", function (req, res) {
     // Delete the Author with the id available to us in req.params.id
-    db.profiles.destroy({
+    db.Profiles.destroy({
       where: {
         id: req.params.id
       }

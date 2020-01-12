@@ -23,6 +23,7 @@
     "mysql2": "^1.7.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "save-dev": "0.0.1-security",
     "sequelize": "^5.21.3"
   },
   "devDependencies": {

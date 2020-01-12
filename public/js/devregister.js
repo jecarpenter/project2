@@ -46,9 +46,10 @@ $(document).ready(function () {
     });
 
     // Submits a new post and brings user to index page upon completion
-    function submitProfile(profile) {
-        $.post("/api/devregister/", profile, function () {
-            window.location.href = "/search";
+    function submitProfile(Profile) {
+        console.log(Profile, " profile in submitprofile")
+        $.post("/api/devregisters/", Profile, function () {
+            window.location.href = "./search.html";
         });
     }
 

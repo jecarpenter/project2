@@ -4,13 +4,18 @@ var path = require("path");
 module.exports = function (app) {
   // Load index page
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile/index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   app.get("/devregister", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile/devregister.html"));
+    res.sendFile(path.join(__dirname, "../public/devregister.html"));
   });
 
+  app.get("/search", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/search.html"));
+  });
+
+  // SAMPLE TEXT STARTS HERE
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
