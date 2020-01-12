@@ -42,24 +42,24 @@ db.sequelize.sync({ force: true }).then(function () {
 //login logic begins here:
 
 //setting up body parser
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-router.post('/register', (req, res) => {
+app.post('/register', (req, res) => {
   res.status(200).send({ access_token: '' });
 });
 
-router.post('/login', (req, res) => {
+app.post('/login', (req, res) => {
   res.status(200).send({ access_token: '' });
 });
 
 //setting the homepage and displaying text to test connection
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('This is an authentication server');
 });
 
 //Here is the post method for sending new user data to the database
-router.post('/register', (req, res) => {
+app.post('/register', (req, res) => {
 
   const name = req.body.name;
   const email = req.body.email;
@@ -81,7 +81,7 @@ router.post('/register', (req, res) => {
 });
 
 //setting up login post for database
-router.post('/login', (req, res) => {
+app.post('/login', (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
   findUserByEmail(email, (err, user) => {
