@@ -48,9 +48,11 @@ $(document).ready(function () {
     // Submits a new post and brings user to index page upon completion
     function submitProfile(Profile) {
         console.log(Profile, " profile in submitprofile")
-        $.post("/api/devregisters/", Profile, function () {
-            window.location.href = "./search.html";
-        });
+        $.post("/api/devregisters/", Profile,
+            function () {
+                window.location.href = "./search.html";
+            }
+        );
     }
 
     // Gets post data for a post if we're editing
