@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function (app) {
   // Find all Profiles and return them to the user with res.json
-  app.get("/api/searchs", function (req, res) {
+  app.get("/api/search", function (req, res) {
     console.log(res.body)
     db.Profiles.findAll({}).then(function (dbProfiles) {
       res.json(dbProfiles);
