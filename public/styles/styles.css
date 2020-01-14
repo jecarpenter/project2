@@ -4,6 +4,9 @@ h1 {
   color: rgb(247, 242, 242);
   font-family: 'Roboto Slab', serif;
 }
+h2{
+  color:rgb(247,242,242)
+}
 
 .lead {
   color: red;
@@ -13,10 +16,7 @@ p {
   width: 750px;
   text-align: center;
   float: center;
-}
-
-.col {
-  background-color: cornflowerblue;
+  font-size: 25px;
 }
 
 /* Here are the ID's and classes proprietatry to the developer profile page:
@@ -138,6 +138,7 @@ position: relative;
 
 .main-container {
   padding: 20px;
+
 }
 
 .skill-bar {

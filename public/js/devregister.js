@@ -41,11 +41,10 @@ $(document).ready(function () {
         // }
         // else {
         submitProfile(newProfile);
-        console.log("Made it here");
         // }
     });
 
-    // Submits a new post and brings user to index page upon completion
+    // Submits a new profile and brings user to index page upon completion
     function submitProfile(Profile) {
         console.log(Profile, " profile in submitprofile")
         $.post("/api/devregisters/", Profile,
@@ -55,31 +54,5 @@ $(document).ready(function () {
         );
     }
 
-    // Gets post data for a post if we're editing
-    //   function getProfileData(id) {
-    //     $.get("/api/devregisters/" + id, function(data) {
-    //       if (data) {
-    //         // If this post exists, prefill our cms forms with its data
-    //         titleInput.val(data.title);
-    //         bodyInput.val(data.body);
-    //         postCategorySelect.val(data.category);
-    //         // If we have a post with this id, set a flag for us to know to update the post
-    //         // when we hit submit
-    //         updating = true;
-    //       }
-    //     });
-    //   }
-
-    //   // Update a given post, bring user to the blog page when done
-    //   function updatePost(post) {
-    //     $.ajax({
-    //       method: "PUT",
-    //       url: "/api/posts",
-    //       data: post
-    //     })
-    //       .then(function() {
-    //         window.location.href = "/blog";
-    //       });
-    //   }
 });
 
